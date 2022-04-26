@@ -1,0 +1,11 @@
+a:-webkit-any-link {
+    color: rgb(82, 86, 94);
+    cursor: pointer;
+    text-decoration:none;
+}
+
+#details {
+    text-align: left;
+    color: black;
+    font-size: small;
+}
