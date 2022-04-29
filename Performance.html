@@ -7,18 +7,24 @@
 
     <!-- This CSS file (bootstrap-theme.min.css) is optional -->
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <style>
-    
-    dl {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-}
+
+    <style type="text/css">
+
+        h2 {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .box1 {
+            margin-bottom: 750px; /* SIMPLY SET THIS PROPERTY AS MUCH AS YOU WANT. This changes the space below box1 */
+        }
+
+        .box2 {
+            margin-top: 750px; /* OR ADD THIS LINE AND SET YOUR PROPER SPACE as the space above box2 */
+        }
     </style>
-    
-</head>
+
+</head> 
 <body>
     <div class="container">
     </div>
@@ -42,7 +48,7 @@
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a></li>
+                            <li class="active"><a href="homepage.html">Home</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#contact">Contact</a></li>
                             <li class="dropdown">
@@ -63,24 +69,22 @@
                     <!--/.nav-collapse -->
                 </div>
             </nav>
-        <h2 style="text-align: center;">Monthly team reports!</h2>
 
-        <div class="sales">
+        <div class="Team Reports" id="Team_Reports">
+            <div class="col-sm-12 col-xs-10">
+                <div class="thumbnail">
+                    <h2>Team Reports</h2>
+                  <div class="caption">
+                  </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="box1">
             <div class="col-sm-6 col-xs-10">
                 <div class="thumbnail">
-                    <h3>Sales Report</h3>
                   <div class="caption">
-                        <ul>
-                            <li>Y axis dispalys </li>
-                            <ul>
-                                <li>Sales</li>
-                            </ul>
-                            <li>X axis dispalys </li>
-                            <ul>
-                                <li>Month</li>
-                            </ul>
-                        </ul>
+                        <img class="img-responsive" src="content/JobApp.png">
                         <button type="button" class="btn btn-primary">Review Analysis</button>
                         <button type="button" class="btn btn-primary">Save</button>
                   </div>
@@ -89,19 +93,29 @@
             <div class="col-sm-6 col-xs-10">
                 <div class="thumbnail">
                   <div class="caption">
+                        <img class="img-responsive" src="content/SemesterR.png">
+                        <button type="button" class="btn btn-primary">Review Analysis</button>
+                        <button type="button" class="btn btn-primary">Save</button>
                   </div>
-                  <img class = "HistogramPic" src = "content/WeekSales.png" alt = "...">
                 </div>
             </div>
         </div>
-        <div class="market_share">
+        <div class="box2" id="Account_Manager">
+            <div class="col-sm-12 col-xs-10">
+                <div class="thumbnail">
+                    <h2>Account Manager Reports</h2>
+                  <div class="caption">
+                  </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="Account Manager Reports Pic">
             <div class="col-sm-6 col-xs-10">
                 <div class="thumbnail">
-                    <h3>Market Share Report</h3>
                   <div class="caption">
-                    <h4>Market Share Display for this month!</h4>
-                    <button type="button" class="btn btn-primary">Review Analysis</button>
+                        <img class="img-responsive" src="content/AccMPer.png">
+                        <button type="button" class="btn btn-primary">Review Analysis</button>
                         <button type="button" class="btn btn-primary">Save</button>
                   </div>
                 </div>
@@ -109,29 +123,10 @@
             <div class="col-sm-6 col-xs-10">
                 <div class="thumbnail">
                   <div class="caption">
-                  </div>
-                  <img class = "HistogramPic" src = "content/MSharepng.png" alt = "...">
-                </div>
-            </div>
-        </div>
-
-        <div class="cost_report">
-
-            <div class="col-sm-6 col-xs-10">
-                <div class="thumbnail">
-                    <h3>Cost Report</h3>
-                  <div class="caption">
-                    <h4>Cost report chart for this month!</h4>
-                    <button type="button" class="btn btn-primary">Review Analysis</button>
+                        <img class="img-responsive" src="content/AccMeetings.png">
+                        <button type="button" class="btn btn-primary">Review Analysis</button>
                         <button type="button" class="btn btn-primary">Save</button>
                   </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-xs-10">
-                <div class="thumbnail">
-                  <div class="caption">
-                  </div>
-                  <img class = "HistogramPic" src = "content/MoCost.png" alt = "...">
                 </div>
             </div>
         </div>
