@@ -1,0 +1,49 @@
+.table-link tr {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1350px) {
+    #table1 {
+        margin-left:auto ;
+    }
+    
+    #table2 {
+        margin-left: 400px;
+    }
+    
+    #table3 {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #table1 {
+        margin-left:auto ;
+    }
+    
+    #table2 {
+        margin-left: -100px;
+        position:relative; left:-150px;
+    }
+    
+    #table3 {
+        margin-left: -100px;
+        position:relative; left:-180px;
+    }
+}
+
+
+
+#table1 {
+    margin-left: 2px;
+    margin-right: 10px;
+}
+
+#table2 {
+    margin-left: 150px;
+}
+
+#table3 {
+    margin-left: 190px;
+}

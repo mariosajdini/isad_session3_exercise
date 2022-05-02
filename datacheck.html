@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<!-- Best viewed in mobile or full screen view -->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,8 @@
   <title>Data Check</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <script src='main.js'></script>
+  <link href="css/datacheckstyle.css" rel="stylesheet">
+  <script src='js/script.js' defer></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
+          <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="homepage.html">AIESEC</a>
       </div>
@@ -39,19 +40,15 @@
   </nav>
 
   <div class="page-header">
-    <h1>Staged files <span class="badge">3</span></h1>
+    <h1>Staged Changes <span class="badge">3</span></h1>
   </div>
-  <div class="container">
-    <div class="row">
 
-    </div>
-  </div>
 
   <!-- 1st table -->
-  <div class="col-md-4">
+  <div class="col-sm-3" id = "table1">
     <div id="dsTable">
-      <h3>Niaou.xlsx <small>Submitted by:"Elena"</small></h3>
-      <table class="table table-hover table-bordered">
+      <h3> Staged Changes 1 <small>Submitted by:"Elena"</small></h3>
+      <table class="table table-hover table-link table-bordered">
         <thead>
           <tr>
             <th class="info">Company Name</th>
@@ -62,114 +59,334 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr data-url="SubAndReview.html">
             <td>Upstream Inc.</td>
             <td>Sales</td>
             <td>john@gmail.com</td>
             <td>23/1/2022</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
+          <tr data-url="SubAndReview.html">
+            <td>Kotsobolos</td>
+            <td>Sales</td>
             <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
+            <td>12/2/2020</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
+          <tr data-url="SubAndReview.html">
+            <td>Google</td>
+            <td>IT</td>
+            <td>susan@yahoo.com</td>
+            <td>15/6/2021</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-remove"></span>
-              </button>
+          <tr data-url="SubAndReview.html">
+            <td>Microsoft</td>
+            <td>Marketing</td>
+            <td>mike@example.com</td>
+            <td>1/2/2022</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
+          <tr data-url="SubAndReview.html">
+            <td>Alpha Bank</td>
+            <td>Finance</td>
+            <td>maria@gmail.com</td>
+            <td>13/3/2022</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
+          <tr data-url="SubAndReview.html">
+            <td>Eurobank</td>
+            <td>IT</td>
+            <td>kostas@example.com</td>
+            <td>22/9/2020</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-minus"></span>
-              </button>
+          <tr data-url="SubAndReview.html">
+            <td>Hellenic Seaways</td>
+            <td>Sales</td>
+            <td>kyle@gmail.com</td>
+            <td>1/12/2021</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
+          <tr data-url="SubAndReview.html">
+            <td>Jetblue</td>
+            <td>Accounting</td>
+            <td> john@example.com</td>
+            <td>22/10/2019</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
-          <tr>
-            <td>July</td>
-            <td>Dooley</td>
+          <tr data-url="SubAndReview.html">
+            <td>Jumbo</td>
+            <td>Sales</td>
+            <td> mary@yahoo.com</td>
+            <td>10/5/2021</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr data-url="SubAndReview.html">
+            <td>Elaktor</td>
+            <td>Technology</td>
+            <td>dimitris@example.com</td>
+            <td>20/1/2022</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr data-url="SubAndReview.html">
+            <td>Terna inc.</td>
+            <td>Sales</td>
             <td>july@example.com</td>
-            <td>213123$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-remove"></span>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-            <td>213123$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-            <td>213123$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-minus"></span>
-              </button>
+            <td>20/5/2020</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
 
@@ -177,37 +394,16 @@
       </table>
       <div class="alert alert-warning" role="alert"> Warning:Some entries in this file have not yet been reviewed!
       </div>
-      <div class="btn-group" role="group" aria-label="...">
-        <div class="btn-group btn-group-lg" role="group" aria-label="...">
-          <button type="button" class="btn btn-success" aria-label="Left Align">
-            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-          </button>
-          <button type="button" class="btn btn-danger" aria-label="Left Align">
-            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-          </button>
-          <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="#">File is wrong</a></li>
-            <li><a href="#">File is outdated</a></li>
-            <li><a href="#">File needs review</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Custom Message:<input type="text"></a></li>
-          </ul>
-        </div>
-      </div>
     </div>
   </div>
 
   <!-- 2nd table -->
-  <div class="col-md-4">
+  <div class="col-sm-3" id = "table2">
     <div id="dsTable">
-      <h3>Niaou.xlsx <small>Submitted by:"Kostas"</small></h3>
-      <table class="table table-hover table-bordered">
+      <h3>Staged Changes 2 <small>Submitted by:"Kostas"</small></h3>
+      <table class="table table-hover table-link table-bordered">
         <thead>
-          <tr>
+          <tr data-url="SubAndReview.html">
             <th class="info">Company Name</th>
             <th class="info">Department Name</th>
             <th class="info">Manager Name</th>
@@ -216,114 +412,334 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
+          <tr data-url="SubAndReview.html">
+            <td>Korres</td>
+            <td>Sales</td>
             <td>john@example.com</td>
-            <td>23112$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
+            <td>10/3/2022</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
+          <tr data-url="SubAndReview.html">
+            <td>Loux</td>
+            <td>HR</td>
+            <td>kostask@gmail.com</td>
+            <td>27/3/2022</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
+          <tr data-url="SubAndReview.html">
+            <td>Minoan</td>
+            <td>Marketing</td>
+            <td>georgia@gmail.com</td>
+            <td>1/4/2021</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
+          <tr data-url="SubAndReview.html">
+            <td>Mytilinaios</td>
+            <td>Accounting</td>
+            <td> manager@example.com</td>
+            <td>23/4/2022</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
+          <tr data-url="SubAndReview.html">
+            <td>Olympic</td>
+            <td>IT</td>
+            <td>johnny@example.com</td>
+            <td>30/3/2020</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
+          <tr data-url="SubAndReview.html">
+            <td>OTE</td>
+            <td>Sales</td>
+            <td> kostantina@gmail.com</td>
+            <td>10/3/2022</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
+          <tr data-url="SubAndReview.html">
+            <td>Piraeus Bank</td>
+            <td>Risk management</td>
+            <td> konstantinos@example.com</td>
+            <td>20/3/2022</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
+          <tr data-url="SubAndReview.html">
+            <td>Titan</td>
+            <td>IT</td>
+            <td>nikos@example.com</td>
+            <td>30/1/2022</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
-          <tr>
-            <td>July</td>
-            <td>Dooley</td>
+          <tr data-url="SubAndReview.html">
+            <td>Wind</td>
+            <td>Marketing</td>
+            <td>christos@example.com</td>
+            <td>10/3/2020</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr data-url="SubAndReview.html">
+            <td>Deh</td>
+            <td>Organising</td>
             <td>july@example.com</td>
-            <td>213123$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
+            <td>12/3/2022</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
-          <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-            <td>213123$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-            <td>213123$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
+          <tr data-url="SubAndReview.html">
+            <td>Olympos</td>
+            <td>Repairs</td>
+            <td>dimitris@gmail.com</td>
+            <td>15/4/2020</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
 
@@ -331,35 +747,14 @@
       </table>
       <div class="alert alert-success" role="alert"> Success:All entries have been reviewed and file is ready to be
         submitted</div>
-      <div class="btn-group" role="group" aria-label="...">
-        <div class="btn-group btn-group-lg" role="group" aria-label="...">
-          <button type="button" class="btn btn-success" aria-label="Left Align">
-            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-          </button>
-          <button type="button" class="btn btn-danger" aria-label="Left Align">
-            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-          </button>
-          <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="#">File is wrong</a></li>
-            <li><a href="#">File is outdated</a></li>
-            <li><a href="#">File needs review</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Custom Message:<input type="text"></a></li>
-          </ul>
-        </div>
-      </div>
     </div>
   </div>
 
   <!-- 3rd table -->
-  <div class="col-md-4">
+  <div class="col-sm-3" id = "table3">
     <div id="dsTable">
-      <h3>Niaou.xlsx <small>Submitted by:"Maria"</small></h3>
-      <table class="table table-hover table-bordered">
+      <h3>Staged Changes 3 <small>Submitted by:"Maria"</small></h3>
+      <table class="table table-hover table-link table-bordered">
         <thead>
           <tr>
             <th class="info">Company Name</th>
@@ -375,136 +770,335 @@
             <td>Software development</td>
             <td>john@example.com</td>
             <td>23/1/2022</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-remove"></span>
-              </button>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
           <tr>
-            <td>Mary</td>
-            <td>Moe</td>
+            <td>Motor oil</td>
+            <td>Finance</td>
+            <td>vassilis@example.com</td>
+            <td>28/12/2022</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Libra group</td>
+            <td>Sales</td>
             <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
+            <td>12/3/2021</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
           <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-minus"></span>
-              </button>
+            <td>Upstream Inc.</td>
+            <td>Dev</td>
+            <td>kostas@yahoo.com</td>
+            <td>29/1/2022</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
           <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-minus"></span>
-              </button>
+            <td>Amazon</td>
+            <td>Delivery</td>
+            <td>david@example.com</td>
+            <td>10/2/2021</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
           <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
+            <td>AWS</td>
+            <td>IT</td>
+            <td>dylan@example.com</td>
+            <td>20/3/2022</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
           <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
+            <td>Tesla</td>
+            <td>Engineering</td>
+            <td>elon@example.com</td>
+            <td>19/3/2022</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
           <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-remove"></span>
-              </button>
+            <td>Google</td>
+            <td>IT</td>
+            <td>bill@example.com</td>
+            <td>1/5/2022</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
           <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-            <td>356324$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-remove"></span>
-              </button>
+            <td>Amazon</td>
+            <td>IT</td>
+            <td>jeff@example.com</td>
+            <td>12/4/2022</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
           <tr>
-            <td>July</td>
-            <td>Dooley</td>
+            <td>BMW</td>
+            <td>Sales</td>
             <td>july@example.com</td>
-            <td>213123$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-remove"></span>
-              </button>
+            <td>12/4/2020</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
           <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-            <td>213123$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-minus"></span>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-            <td>213123$</td>
-            <td><button type="submit" class="btn btn-link">
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
+            <td>Mercedes</td>
+            <td>Sales</td>
+            <td>kostas@example.com</td>
+            <td>17/3/2020</td>
+            <td>
+              <div class="btn-group" role="group" aria-label="...">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-success" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-danger" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span
+                      class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entry is wrong</a></li>
+                    <li><a href="#">Entry is outdated</a></li>
+                    <li><a href="#">Entry needs review</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Custom Message:<input type="text"></a></li>
+                  </ul>
+                </div>
+              </div>
             </td>
           </tr>
 
         </tbody>
       </table>
       <div class="alert alert-info" role="alert">Info:The creator of this file says it needs some adjustment</div>
-      <div class="btn-group" role="group" aria-label="...">
-        <div class="btn-group btn-group-lg" role="group" aria-label="...">
-          <button type="button" class="btn btn-success" aria-label="Left Align">
-            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-          </button>
-          <button type="button" class="btn btn-danger" aria-label="Left Align">
-            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-          </button>
-          <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="#">File is wrong</a></li>
-            <li><a href="#">File is outdated</a></li>
-            <li><a href="#">File needs review</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Custom Message:<input type="text"></a></li>
-          </ul>
-        </div>
-      </div>
     </div>
   </div>
   </div>
