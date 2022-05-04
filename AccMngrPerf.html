@@ -5,12 +5,20 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
         <title>Account Manager performance</title>
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css"
+
+
+        <!-- JavaScript files before the closing head tag -->
+      
+
+
     </head>
     <body>
         <div class="container">
@@ -29,17 +37,18 @@
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>                        
                         </button>
-                        <a class="navbar-brand" href="#">AIESEC</a>
+                        <a class="navbar-brand" href="homepage.html">AIESEC</a>
                       </div>
                       <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
                           <li class="active"><a href="homepage.html">Home</a></li>
-                          <li><a href="AccMngrPerf.html">Account Manager Performance</a></li>
-                          <li><a href="datacheck.html">Data check</a></li>
-                          <li><a href="#">Data input</a></li>
+                          <li class="active"><a href="AccMngrPerf.html">Account Manager Performance</a></li>
+                          <li class="active"><a href="datacheck.html">Data check</a></li>
+                          <li class="active"><a href="SubAndReview.html">Contact Registration</a></li>
+                          <li class="active"><a href="Performance.html">Organisation Analytics</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                          <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                          <li class="active"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                         </ul>
                       </div>
                     </div>
@@ -66,98 +75,106 @@
                       </div>
                     </div>
                 </div>
-                <div class="col-sm-5 col-xs-6">
-                    <div class="thumbnail">
-                        <img class = "img-responsive" src = "content/Effectiveness.png" alt = "">
-                        <div class="caption">
-                      </div>
-                    </div>
-                </div>
-                <div class="col-sm-5 col-xs-6">
-                    <div class="thumbnail">
-                        <img class = "img-responsive" src = "content/MSharepng.png" alt = "">
-                        <div class="caption">
-                      </div>
+
+                <div class="col-sm-6 col-xs-12">
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse1">Collapsible list group</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapse1" class="panel-collapse collapse">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><button type="button" class="btn btn-primary">Compare to last Week</button></li>
+                                    <li class="list-group-item"><button type="button" class="btn btn-primary">Compare to last Month</button></li>
+                                    <li class="list-group-item"><button type="button" class="btn btn-primary">Compare to last Semester</button></li>
+                                    <li class="list-group-item"><button type="button" class="btn btn-primary">General Comparison </button></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-                <div class="row">
+                    
+            
 
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="thumbnail">
-                            <img width="125" src = "userimg.png" alt = "">
-                            <div class="caption">
-                                <h3>Account Manager Report</h3>
-                                <p>Contacted: <hr>
-                                Called: <hr>
-                                Meetings Booked: <hr>
-                                Meetings Done: <hr>
-                                Partnerships: <hr>
-                                Correct Updates: <hr>
-                                False Updates: <hr>
-                                Staged contacts: <hr></p>
-                                <p><a href="Performance.html#Account_Manager" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-signal"></span> Comparing performance</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="thumbnail">
-                            <img width="125" src = "userimg.png" alt = "">
-                            <div class="caption">
-                                <h3>Account Manager Report</h3>
-                                <p>Contacted: <hr>
-                                Called: <hr>
-                                Meetings Booked: <hr>
-                                Meetings Done: <hr>
-                                Partnerships: <hr>
-                                Correct Updates: <hr>
-                                False Updates: <hr>
-                                Staged contacts: <hr></p>
-                                <p><a href="Performance.html#Account_Manager" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-signal"></span> Comparing performance</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="thumbnail">
-                            <img width="125" src = "userimg.png" alt = "">
-                            <div class="caption">
-                                <h3>Account Manager Report</h3>
-                                <p>Contacted: <hr>
-                                Called: <hr>
-                                Meetings Booked: <hr>
-                                Meetings Done: <hr>
-                                Partnerships: <hr>
-                                Correct Updates: <hr>
-                                False Updates: <hr>
-                                Staged contacts: <hr></p>
-                                <p><a href="Performance.html#Account_Manager" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-signal"></span> Comparing performance</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="thumbnail">
-                            <img width="125" src = "userimg.png" alt = "">
-                            <div class="caption">
+            <div class="row">
+
+                <div class="col-sm-3 col-xs-6">
+                    <div class="thumbnail">
+                        <img width="125" src = "userimg.png" alt = "">
+                        <div class="caption">
                             <h3>Account Manager Report</h3>
                             <p>Contacted: <hr>
-                                Called: <hr>
-                                Meetings Booked: <hr>
-                                Meetings Done: <hr>
-                                Partnerships: <hr>
-                                Correct Updates: <hr>
-                                False Updates: <hr>
-                                Staged contacts: <hr></p>
-                                <p><a href="Performance.html#Account_Manager" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-signal"></span> Comparing performance</a></p>
-                            </div>
+                            Called: <hr>
+                            Meetings Booked: <hr>
+                            Meetings Done: <hr>
+                            Partnerships: <hr>
+                            Correct Updates: <hr>
+                            False Updates: <hr>
+                            Staged contacts: <hr></p>
+                            <p><a href="Performance.html#Account_Manager" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-signal"></span> Comparing performance</a></p>
                         </div>
                     </div>
-                
                 </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="thumbnail">
+                        <img width="125" src = "userimg.png" alt = "">
+                        <div class="caption">
+                            <h3>Account Manager Report</h3>
+                            <p>Contacted: <hr>
+                            Called: <hr>
+                            Meetings Booked: <hr>
+                            Meetings Done: <hr>
+                            Partnerships: <hr>
+                            Correct Updates: <hr>
+                            False Updates: <hr>
+                            Staged contacts: <hr></p>
+                            <p><a href="Performance.html#Account_Manager" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-signal"></span> Comparing performance</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="thumbnail">
+                        <img width="125" src = "userimg.png" alt = "">
+                        <div class="caption">
+                            <h3>Account Manager Report</h3>
+                            <p>Contacted: <hr>
+                            Called: <hr>
+                            Meetings Booked: <hr>
+                            Meetings Done: <hr>
+                            Partnerships: <hr>
+                            Correct Updates: <hr>
+                            False Updates: <hr>
+                            Staged contacts: <hr></p>
+                            <p><a href="Performance.html#Account_Manager" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-signal"></span> Comparing performance</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="thumbnail">
+                        <img width="125" src = "userimg.png" alt = "">
+                        <div class="caption">
+                        <h3>Account Manager Report</h3>
+                        <p>Contacted: <hr>
+                            Called: <hr>
+                            Meetings Booked: <hr>
+                            Meetings Done: <hr>
+                            Partnerships: <hr>
+                            Correct Updates: <hr>
+                            False Updates: <hr>
+                            Staged contacts: <hr></p>
+                            <p><a href="Performance.html#Account_Manager" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-signal"></span> Comparing performance</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
         </div><!-- /.container -->
 
-        <!-- JavaScript files before the closing body tag -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </body>
 </html>
