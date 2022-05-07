@@ -1,46 +1,46 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
 
-    <style type="text/css">
+  <style type="text/css">
 
-        h2 {
-            text-align: center;
-            padding: 10px 0;
-        }
+      h2 {
+          text-align: center;
+          padding: 10px 0;
+      }
 
-        .box1 {
-            margin-bottom: 750px; /* SIMPLY SET THIS PROPERTY AS MUCH AS YOU WANT. This changes the space below box1 */
-        }
+      .box1 {
+          margin-bottom: 750px; /* SIMPLY SET THIS PROPERTY AS MUCH AS YOU WANT. This changes the space below box1 */
+      }
 
-        .box2 {
-            margin-top: 750px; /* OR ADD THIS LINE AND SET YOUR PROPER SPACE as the space above box2 */
-        }
-   
+      .box2 {
+          margin-top: 750px; /* OR ADD THIS LINE AND SET YOUR PROPER SPACE as the space above box2 */
+      }
+ 
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+position: relative;
+display: inline-block;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
 }
 
 .dropdown-content a:hover {background-color: #ddd;}
@@ -48,152 +48,164 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
-    </style>
+  </style>
 
 </head> 
 <body>
-    <div class="container">
-    </div>
-    <!–- jQuery library (necessary for Bootstrap JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <div class="container">
+  </div>
+  <!–- jQuery library (necessary for Bootstrap JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-        <!–- Bootstrap core JavaScript -->
-            <script src="js/bootstrap.min.js"></script>
+      <!–- Bootstrap core JavaScript -->
+          <script src="js/bootstrap.min.js"></script>
 
-            <nav class="navbar navbar-inverse">
-              <div class="container-fluid">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
-                  </button>
-                  <a class="navbar-brand" href="homepage.html">AIESEC</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="homepage.html">Home</a></li>
-                    <li class="active"><a href="AccMngrPerf.html">Account Manager Performance</a></li>
-                    <li class="active"><a href="datacheck.html">Data check</a></li>
-                    <li class="active"><a href="SubAndReview.html">Contact Registration</a></li>
-                    <li class="active"><a href="Performance.html">Organisation Analytics</a></li>
-                  </ul>
-                  <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                  </ul>
-                </div>
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="homepage.html">AIESEC</a>
               </div>
-            </nav>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="homepage.html">Home</a></li>
+                  <li class="active"><a href="AccMngrPerf.html">Account Manager Performance</a></li>
+                  <li class="active"><a href="datacheck.html">Data check</a></li>
+                  <li class="active"><a href="SubAndReview.html">Contact Registration</a></li>
+                  <li class="active"><a href="Performance.html">Organisation Analytics</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
-        <div class="Team Reports" id="Team_Reports">
-            <div class="col-sm-12 col-xs-10">
-                <div class="thumbnail">
-                    <h2>Team Reports</h2>
-                  <div class="caption">
-                  </div>
+      <div class="Team Reports" id="Team_Reports">
+          <div class="col-sm-12 col-xs-10">
+              <div class="thumbnail">
+                  <h2>Team Reports</h2>
+                <div class="caption">
                 </div>
-            </div>
-        </div>
-
-        <div class="box1">
-            <div class="col-sm-6 col-xs-10">
-                <div class="thumbnail">
-                  <div class="caption">
-                        <img class="img-responsive" src="content/JobApp.png">
-                        <div class="dropdown">
-                          <button type="button" class="btn btn-primary">Review Analysis</button>
-                          <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                          </div>
-                        </div>
-                        <button type="button" class="btn btn-primary">Save</button>
-                  </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-xs-10">
-                <div class="thumbnail">
-                  <div class="caption">
-                        <img class="img-responsive" src="content/SemesterR.png">
-                        <div class="dropdown">
-                          <button type="button" class="btn btn-primary">Review Analysis</button>
-                          <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                          </div>
-                        </div>
-                        <button type="button" class="btn btn-primary">Save</button>
-                  </div>
-                </div>
-            </div>
-        </div>
-        <div class="box2" id="Account_Manager">
-            <div class="col-sm-12 col-xs-10">
-                <div class="thumbnail">
-                    <h2>Account Manager Reports</h2>
-                  <div class="caption">
-                  </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="Account Manager Reports Pic">
-            <div class="col-sm-6 col-xs-10">
-                <div class="thumbnail">
-                  <div class="caption">
-                        <img class="img-responsive" src="content/AccMPer.png">
-                        <div class="dropdown">
-                          <button type="button" class="btn btn-primary">Review Analysis</button>
-                          <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                          </div>
-                        </div>
-                        <button type="button" class="btn btn-primary">Save</button>
-                  </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-xs-10">
-                <div class="thumbnail">
-                  <div class="caption">
-                        <img class="img-responsive" src="content/AccMeetings.png">
-                        <div class="dropdown">
-                          <button type="button" class="btn btn-primary">Review Analysis</button>
-                          <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                          </div>
-                        </div>
-                        <button type="button" class="btn btn-primary">Save</button>
-                  </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-6 col-xs-12">
-          <div class="panel-group">
-              <div class="panel panel-default">
-                  <div class="panel-heading">
-                      <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#collapse1">Collapsible list group</a>
-                      </h4>
-                  </div>
-
-                  <div id="collapse1" class="panel-collapse collapse">
-                      <ul class="list-group">
-                          <li class="list-group-item">One</li>
-                          <li class="list-group-item">Two</li>
-                          <li class="list-group-item">Three</li>
-                      </ul>
-                  </div>
               </div>
           </div>
       </div>
-  </div>
+
+      <div class="box1">
+          <div class="col-sm-6 col-xs-10">
+              <div class="thumbnail">
+                <div class="caption">
+                      <img class="img-responsive" src="content/JobApp.png">
+                      <button type="button" class="btn btn-primary">Review Analysis</button>
+                      <button type="button" class="btn btn-primary">Save</button>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-xs-10">
+              <div class="thumbnail">
+                <div class="caption">
+                      <img class="img-responsive" src="content/SemesterR.png">
+                      <button type="button" class="btn btn-primary">Review Analysis</button>
+                      <button type="button" class="btn btn-primary">Save</button>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="box2" id="Account_Manager">
+          <div class="col-sm-12 col-xs-10">
+              <div class="thumbnail">
+                  <h2>Account Manager Reports</h2>
+                <div class="caption">
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="Account Manager Reports Pic">
+          <div class="col-sm-6 col-xs-10">
+              <div class="thumbnail">
+                <div class="caption">
+                      <img class="img-responsive" src="content/AccMPer.png">
+                      <button type="button" class="btn btn-primary">Review Analysis</button>
+                      <button type="button" class="btn btn-primary">Save</button>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-xs-10">
+              <div class="thumbnail">
+                <div class="caption">
+                      <img class="img-responsive" src="content/AccMeetings.png">
+                      <button type="button" class="btn btn-primary">Review Analysis</button>
+                      <button type="button" class="btn btn-primary">Save</button>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-sm-6 col-xs-12">
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse1">More Analytics Available</a>
+                    </h4>
+                </div>
+
+                <div id="collapse1" class="panel-collapse collapse">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                          <a class="select-bt-size" data-toggle="modal" data-target="#myModal1">Economical Analysis</a>
+                          <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                          
+                                  <h4 class="modal-title" id="myModalLabel">Economical Analysis</h4>
+                                </div>
+                          
+                                <div class="modal-body">
+                                  <img src="content/economical.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                                  
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <a class="select-bt-size" data-toggle="modal" data-target="#myModal2">Feature Performance Analysis</a>
+                          <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                          
+                                  <h4 class="modal-title" id="myModalLabel">Feature Performance Analysis</h4>
+                                </div>
+                          
+                                <div class="modal-body">
+                                  <p><img src="content/performance-analysis-img.png" class="img-responsive" style="width:100%" alt="Image"></p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                                  </form>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 </body>
-
